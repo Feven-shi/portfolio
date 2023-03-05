@@ -1,0 +1,417 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* background-image: url("shine.gif"); */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.f {
+    display: flex;
+    padding-top: 30px;
+    height: 10px;
+}
+
+.f nav {
+    margin-left: 10%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.navs {
+    display: contents;
+}
+
+.navs li {
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+#navbarTogglerDemo01 .navs li a{
+    color: white;
+}
+
+#navbarTogglerDemo01 .navs li a:hover {
+    color: #f9004d;
+    transition: .5s;
+}
+
+.logo {
+    height: fit-content;
+}
+
+.logo img {
+    width: 120px;
+}
+
+
+.intro {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.slide {
+    position: absolute;
+    margin-right: 30%;
+}
+
+.name {
+    display: grid;
+    justify-content: center;
+    /* color: rgb(176, 181, 184); */
+}
+
+.top,
+.bottom {
+    color: white;
+    text-align: center;
+    font-size: 7rem;
+    font-weight: bold;
+    letter-spacing: 30px;
+    margin-bottom: 10px;
+    /*-60*/
+    position: relative;
+    animation: text 3s 1;
+    background-color: black;
+    /* to hide web developer text */
+
+}
+
+.top {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 48%, 0% 60%);
+    grid-area: 1/1/-1/-1;
+}
+
+.bottom {
+    clip-path: polygon(0% 63%, 100% 50%, 100% 100%, 0% 100%);
+    transform: translateX(0.03em);
+    grid-area: 1/1/-1/-1;
+}
+
+.job {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: white;
+}
+
+#job1{
+    color: #f9004d;
+}
+
+#j11{
+    margin-left: 100px;
+    border-left: 3px solid #f9004d;
+    height: 300px;
+}
+@keyframes text {
+    0% {
+        color: black;
+        /* shading effect for feven */
+        margin-bottom: -60px;
+        /* to pop web developer under feven */
+    }
+
+    30% {
+        letter-spacing: 40px;
+        margin-bottom: -60px;
+    }
+}
+
+.modal-content {
+    background-color: black;
+    height: 100vh;
+
+}
+
+.modal-dialog {
+    margin: 0;
+}
+
+.modal-header {
+    padding-bottom: 16px;
+    margin-left: 20px;
+}
+
+.modal-body ul li {
+    margin-bottom: 5px;
+}
+
+.modal-body ul li
+{ color: white;}
+
+.modal-body ul li a {
+    padding-left: 10px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.modal-footer a {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    color: white;
+}
+
+#talk {
+    margin-top: 70%;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    width: 200px;
+    height: auto;
+    margin-left: 55%;
+    margin-bottom: 20%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 644px) {
+    .f {
+        padding-left: 20px;
+    }
+
+    .f nav {
+        padding-left: 50%;
+        padding-top: 25px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    #iconTop {
+        margin-left: 100%;
+        transition-duration: .4s;
+        transition-delay: 2s;
+    }
+
+    #icon {
+        color: aliceblue;
+        font-size: 25px;
+    }
+
+    .slide {
+        margin-left: 25%;
+    }
+
+    .profile img {
+        width: 150px;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    .top,
+    .bottom {
+        font-size: 60px;
+        letter-spacing: 20px;
+        margin-top: 200px;
+        padding-left: 5%;
+    }
+
+    .job {
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding-left: 5px;
+    }
+
+    #j11{
+        margin-left: 25%;
+        transition-duration: .4s;
+        transition-delay: 2s;
+    }
+
+    .cardss .row .m img {
+        width: 250px;
+        margin-left: 10%;
+        transform: translatey(-20%);
+        clip-path: circle(40%);
+    }
+
+    .main {
+        margin-top: 30%;
+    }
+
+    .cardss2 button{
+        margin-right:50% ;
+    }
+
+} 
+
+.main .container {
+    margin-bottom: 15%;
+}
+
+.cardss {
+    margin-left: 25%;
+    width: fit-content;
+}
+
+.cardss .row {
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.cardss .row img {
+    width: 370px;
+    transform: translateX(-70%);
+}
+
+.m {
+    transform: translatey(-20%);
+    height: 210px;
+    font-size: 15px;
+} 
+.m p{
+    width: 400px;
+    height: 30vh;
+    font-size: 17px;
+    color: white;
+}
+
+.m img {
+    box-shadow: -16px -15px  #f9004d;
+}
+
+.m .card-body {
+    transform: translateX(-20%);
+    background: transparent;
+}
+
+.all h5 {
+    background-color: black;
+    width: fit-content;
+    font-size: 2rem;
+}
+
+.works button, .cardss2 button {
+    box-shadow: 5px 5px 8px #f9004d;
+    background-color: transparent;
+}
+
+.cardss2 button{
+    margin-left:60% ;
+}
+
+.myp{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;   
+} 
+#myp1 {
+    color: #f9004d;
+}
+
+.cardss2 .row{
+    margin-top: 55px;
+}
+
+.cardss2 .col .card{
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 6px #f9004d;
+} 
+
+.works h1 {
+    color: white;
+}
+
+.works button{
+    margin-left: 10%;
+    margin-bottom: 20px;
+    box-shadow: -5px -5px 6px #f9004d;
+} 
+
+.works #w2 {
+    color: #f9004d;
+}
+
+.work-sides div{
+    padding-left: 50px;
+}
+
+.work-sides .card{
+    background-color: black;
+    color: white;
+}
+
+.work-sides .card p button{
+    color: white; }
+
+
+.work-sides .card .card-title   {
+    display: flex;
+}
+
+.work-sides .card .card-title #w-year  {
+    padding-left: 100%;
+}
+
+.work-sides button{
+    box-shadow: 2px 2px 2px 2px #f9004d;
+    background-color: transparent;
+}
+
+.work-sides .card  a{
+    color: #f9004d;
+    text-align: center;
+} 
+
+.contact{
+    margin-left: 5%;
+}
+
+.contact header h3 span {
+    display: block;
+    color: white;
+}
+
+.hl {
+    border: 1.5px solid #f9004d;
+    width: 80%;
+    margin-left: 15%;
+}
+
+
+#feel-free {
+    color: #f9004d;
+} 
+
+.contact form {
+    margin: 20px;
+    color: white;
+} 
+
+.contact form input , #exampleFormControlTextarea1, .btn{
+    background-color: transparent;
+} 
+
+.btn {
+    color: #f9004d;
+    border: 1.5px solid #f9004d;
+}
+
+.btn:hover, .links button:hover{
+    color: white;
+    transition: .4s; 
+    box-shadow: 5px 5px #f9004d ;
+}
+
+.cardss2 button:hover {
+    transition: .4s; 
+    box-shadow: 15px 15px #f9004d ;
+} 
+
+#work-btn:hover {
+    transition: .4s; 
+    box-shadow: -15px -15px #f9004d ;
+}
